@@ -1,0 +1,10 @@
+#main {
+    background-color: #101010;
+}
+
+* {
+    color: #eee;
+    letter-spacing: .03em;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
