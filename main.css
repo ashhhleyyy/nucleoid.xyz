@@ -1,10 +1,165 @@
-#main {
-    background-color: #101010;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 
 * {
-    color: #eee;
-    letter-spacing: .03em;
-    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+.background
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Content */
+
+.background .content
+{
+    max-width: 750px;
+    position: relative;
+    text-align: center;
+}
+.background .content h2
+{
+    font-size: 50px;
+    color: #ffffff;
+
+}
+.background .content p
+{
+    font-size: 30px;
+    color: #ffffff;
+}
+.background .content .paragraph p
+{
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Logo */
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img
+{
+    display: block;
+    margin: auto;
+}
+
+/* Buttons */
+
+.background a
+{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    top: 40px;
+    margin: 10px 0;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 60px;
+    background: linear-gradient(80deg, #E3E3E3, #9E9E9E);
+}
+
+.background a:nth-of-type(2)
+{
+    color: #ffffff;
+    background: linear-gradient(80deg, #2360BD, #646ED5);
+}
+
+/* Pixel Waves */
+
+section
+{
+    height: 100vh;
+    overflow: hidden;
+}
+section .Wave
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(assets/images/Wave.png);
+    background-size: 1000px 100px;
+    z-index: -1;
+    margin: auto;
+}
+
+section .Wave.Wave1
+{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+section .Wave.Wave2
+{
+    animation: animate 15s linear infinite;
+    animation-direction: reverse;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+section .Wave.Wave3
+{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+section .Wave.Wave4
+{
+    animation: animate 5s linear infinite;
+    animation-direction: reverse;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
 }
