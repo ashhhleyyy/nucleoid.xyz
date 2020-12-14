@@ -19,8 +19,6 @@
 
 .background img {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -53,19 +51,16 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 20%;
-    height:100px;
-    margin:auto;
+    width: 512px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo img {
-    display: block;
-    margin: auto;
-    width: 512px;
-    max-width: 100vw;
+#nucleoidLogo {
+    width: 100%;
+    max-width: 60vw;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
 }
@@ -99,14 +94,15 @@ header .logo img {
     background: linear-gradient(80deg, #2360BD, #646ED5);
 }
 
-.background a{
-    transition:0.4s;
+.background a {
+    transition: 0.4s;
 }
 
-.background a:hover{
-    transform:scale(1.1);
-    z-index:5;
+.background a:hover {
+    transform: scale(1.1);
+    z-index: 5;
 }
+
 /* Pixel Waves */
 
 section {
@@ -161,8 +157,4 @@ section .Wave.Wave4 {
 @keyframes animate {
     0% { background-position-x: 0px; }
     100% { background-position-x: 500px; }
-}
-
-#nucleoidLogo{
-    width:100%;
 }
