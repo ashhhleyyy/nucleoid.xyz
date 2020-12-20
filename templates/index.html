@@ -34,7 +34,7 @@
           <div class="item">
             <div class="header">
               <h2>{{ page.title }}</h2>
-              <img src="{{ page.extra.header | safe }}"/>
+              <a href="{{page.extra.link | safe}}"><img src="{{ page.extra.header | safe }}"/></a>
             </div>
             <div class="desc">
                 {{page.content | safe}}

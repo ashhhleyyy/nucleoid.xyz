@@ -3,6 +3,7 @@ title = "Murder Mystery"
 
 [extra]
 header = "assets/images/murder_mystery.png"
+link = "https://github.com/NucleoidMC/Murder-Mystery"
 
 # TODO
 [[extra.contributors]]
@@ -10,4 +11,4 @@ name = "Gegy"
 minecraft = "c3ed4d52fb4f4964ba1b9cda2453741e"
 +++
 
-A semi-team-based game in which a player with the Detective role must shoot the player with the Murderer role before they kill all of the players with the Innocent role. Innocents are able to pick up the Detective's bow if they are murdered, becoming the new Detective in the process. If the Detective shoots the wrong person, they may die as well. Players are able to collect coins, which do nothing except give satisfaction from what I can tell. 
+Murder Mystery is a semi-team-based game in which **Detectives** must shoot the **Murderer** before they kill all of the **Innocent** players! If the **Detective** is murdered, an **Innocent** player is able to pick up their bow. If the **Detective** shoots the wrong person, they may die as well. **Innocent** players can additionally gather coins, which, when they accumulate enough, grants them an arrow that they can use to shoot the **Murderer**.

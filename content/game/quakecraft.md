@@ -3,6 +3,7 @@ title = "Quakecraft"
 
 [extra]
 header = "assets/images/quakecraft.png"
+link = "https://github.com/LambdAurora/quakecraft"
 
 [[extra.contributors]]
 name = "LambdAurora"
@@ -12,9 +13,9 @@ name = "Hmmarch"
 minecraft = "4d6ee28d9bd345a5a5c4c39b87827b9c"
 +++
 
-A free-for-all game in which players use a variety of projectiles to kill each other. The first person to 24 kills, or the one with the highest kill-count before the time runs out, wins! The weapons include: 
-- A railgun, which shoots a ray directly forward, instantly killing anything in its path. Clicking the attack button instead of the use button will launch the player forwards and slightly upwards. 
-- A rocket launcher, which shoots a fireball in the direction the player is facing. If the player who shot the fireball is hit by it, they will be launched upward with varying velocity. 
-- A grenade launcher, which shoots a grenade affected by gravity in the direction the player is facing. The grenade will blow up after a few seconds. 
+Quakecraft is a fast-paced free-for-all game in which players must battle each other to 24 kills.
 
-There are two maps included with the minigame, and two variations of each of them. 
+Players can make use of various weapons, such as: 
+- A railgun, which shoots a ray directly forward, instantly killing anything in its path. Clicking the attack button instead of the use button will propel the player forwards.
+- A rocket launcher, which shoots a fireball that has an area-of-effect impact.
+- A grenade launcher, which shoots a grenade in the direction the player is facing. The grenade will blow up after a few seconds. 

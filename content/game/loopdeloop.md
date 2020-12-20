@@ -3,6 +3,7 @@ title = "Loop-de-Loop"
 
 [extra]
 header = "assets/images/loopdeloop.png"
+link = "https://github.com/NucleoidMC/loop-de-loop"
 
 [[extra.contributors]]
 name = "Restioson"
@@ -12,6 +13,6 @@ name = "Gegy"
 minecraft = "c3ed4d52fb4f4964ba1b9cda2453741e"
 +++
 
-A free-for-all party game in which players must fly through loops and get to the end the quickest. A player can get fireworks back after depleting them by failing or going through a ring. 
+Loop-de-Loop is a free-for-all party game in which players must fly through loops and reach the end of the course as fast as possible! A player can get fireworks back after depleting them by failing or going through a ring. 
 
-On the official Nucleoid server, there is the standard mode, an amplified version with extra Y variation, a fast version, a long version, a ridiculous version with insane amounts of Y variation, and a "Flappy Mode" version. 
+There is additionally a "Flappy Hoop" version, which plays similar to Flappy Bird, but in 3D! 

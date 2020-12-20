@@ -3,6 +3,7 @@ title = "Siege"
 
 [extra]
 header = "assets/images/siege.png"
+link = "https://github.com/NucleoidMC/Siege"
 
 [[extra.contributors]]
 name = "Restioson"
@@ -27,8 +28,7 @@ name = "TheBrokenTwo"
 minecraft = "4a7864f9767844699df8039092b44f56"
 +++
 
-A work-in-progress team-based game in which players on the Attacker team must take over all of the territory of the players on the Defender team before time runs out. The Attackers get a slight speed buff to even the playing field. There are a few different kits to choose from, allowing for more varied gameplay. A kit's resources are limited, and can be restocked by using an ender chest. The kits currently include: 
-- Archer, gets a wooden sword, a bow, ten steak, and sixteen arrows. Their armor is all leather. 
-- Soldier, gets an iron sword, a stone axe, and ten steak. Their armor is all leather except for the chestplate and boots, which are diamond and iron respectively. 
-- Shield Bearer, gets an iron sword, ten steak, and a shield. Their armor is all iron except for the boots and helmet, which are leather. 
-- Constructor, gets a wooden sword, a wooden axe, four ladders, ten steak, and eight wooden planks. Their armor is all leather. 
+A work-in-progress point-capture team-based game in which the **Attackers** must take over all of the territory from the **Defenders** before time runs out. 
+Players can choose from a variety of kits, but resources are limited, and must be restocked by using an ender chest. 
+
+The kits currently include: the Archer, the Soldier, the Shield Bearer, and the Constructor.

@@ -81,7 +81,7 @@ img.sharp {
 
 /* Buttons */
 
-.content a {
+.contact a {
     position: relative;
     display: inline-block;
     padding: 12px 36px;
@@ -94,15 +94,15 @@ img.sharp {
     background: linear-gradient(80deg, #E3E3E3, #9E9E9E);
 }
 
-.content a:nth-of-type(2) {
+.contact a:nth-of-type(2) {
     background: linear-gradient(80deg, #2360BD, #646ED5);
 }
 
-.content a {
+.contact a {
     transition: 0.4s;
 }
 
-.content a:hover {
+.contact a:hover {
     transform: scale(1.1);
     z-index: 5;
 }
@@ -116,7 +116,7 @@ img.sharp {
 /* Games */
 
 .games {
-    background-color: #0004;
+    background-color: #111a;
     border-radius: 20px;
 }
 
@@ -163,6 +163,8 @@ img.sharp {
     z-index: 0;
     width: 100%;
     filter: brightness(80%);
+    border-radius: 20px;
+    border: 2px solid rgb(133, 247, 255);
 }
 
 .games .item .header img:hover {
@@ -182,13 +184,14 @@ img.sharp {
     line-height: 40px;
     text-align: center;
     border-radius: 100%;
-    background-color: rgba(95, 106, 117, 0.6);
+    background-color: #555a;
     z-index: 2;
     user-select: none;
 }
 
 .carousel .control:hover {
-    background-color: rgba(95, 106, 117, 0.9);
+    background-color: #555e;
+    transition: all 0.1s linear;
     cursor: pointer;
  }
  .carousel .control.next {
