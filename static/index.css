@@ -120,7 +120,7 @@ img.sharp {
     border-radius: 20px;
 }
 
-.games .game {
+.games .item {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -130,26 +130,26 @@ img.sharp {
     scroll-snap-align: center;
 }
 
-.games .game .desc h3 {
+.games .item .desc h3 {
     font-size: 22px;
     margin: 0px;
 }
 
-.games .game .desc {
+.games .item .desc {
     font-size: 20px;
 }
 
-.games .game .desc p {
+.games .item .desc p {
     margin-top: 8px;
 }
 
-.games .game .header {
+.games .item .header {
     width: 100%;
     margin: 0;
     position: relative;
 }
 
-.games .game .header h2 {
+.games .item .header h2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -159,13 +159,13 @@ img.sharp {
     z-index: 2;
 }
 
-.games .game .header img {
+.games .item .header img {
     z-index: 0;
     width: 100%;
     filter: brightness(80%);
 }
 
-.games .game .header img:hover {
+.games .item .header img:hover {
     filter: brightness(60%);
     transition: all 0.1s linear;
 }
@@ -184,6 +184,7 @@ img.sharp {
     border-radius: 100%;
     background-color: rgba(95, 106, 117, 0.6);
     z-index: 2;
+    user-select: none;
 }
 
 .carousel .control:hover {
