@@ -5,7 +5,9 @@ title = "Murder Mystery"
 header = "assets/images/murder_mystery.png"
 link = "https://github.com/NucleoidMC/Murder-Mystery"
 
-# TODO
+[[extra.contributors]]
+name = "SmellyModder"
+minecraft = "b8b859a52dbc47438f7a4768f6692606"
 [[extra.contributors]]
 name = "Gegy"
 minecraft = "c3ed4d52fb4f4964ba1b9cda2453741e"

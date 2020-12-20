@@ -21,6 +21,9 @@ minecraft = "89409ca75d94461890060f264b7dc804"
 name = "CatCore"
 minecraft = "5bb676efecee4258ae1f53e163839585"
 [[extra.contributors]]
+name = "SmellyModder"
+minecraft = "b8b859a52dbc47438f7a4768f6692606"
+[[extra.contributors]]
 name = "Patbox"
 minecraft = "f5a216d9d66049968d0fd49053677676"
 [[extra.contributors]]
