@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+{% endblock head %}
+
+{% block body %}
+<div class="header">
+  <img src="assets/images/nucleoid_logo.png" alt="Nucleoid's logo" id="nucleoidLogo">
+</div>
+<div class="background">
+  <img src="assets/images/background.png" alt="A screenshot of the Nucleoid Minecraft server">
+
+  <div class="content">
+    <div class="fadeIn" style="font-size:2vmax;">
+      {{ section.content | safe }}
+    </p>
+
+    <p class="fadeIn contact" style="font-size:2vmax;">
+      For now, you can find us on: <br>
+      <a href="https://github.com/NucleoidMC" style="font-size:2vmax;">GitHub</a>
+      <a href="https://nucleoid.xyz/discord" style="font-size:2vmax;">Discord</a>
+    </p>
+  </div>
+</div>
+{% endblock body %}

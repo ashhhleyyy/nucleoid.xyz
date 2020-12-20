@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://nucleoid.xyz/sitemap.xml
