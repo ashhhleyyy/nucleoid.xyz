@@ -74,6 +74,7 @@ img.sharp {
     padding: 2px 8px;
     border-radius: 16px;
     font-family: monospace;
+    user-select: all;
 }
 
 .contact {
