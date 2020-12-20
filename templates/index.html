@@ -39,13 +39,21 @@
             <div class="desc">
                 {{page.content | safe}}
             </div>
+            <div class="contributors" style="margin-top: auto;">
+              {% for contributor in page.extra.contributors %}
+              <div class="contributor">
+                <img src="https://crafatar.com/avatars/{{contributor.minecraft}}?overlay=true&size=8" class="sharp"/>
+                <h3>{{ contributor.name }}</h3>
+              </div>
+              {% endfor %}
+            </div>
           </div>
           {% endfor %}
         </div>
       </div>
     </div>
   
-    <h1 class="fadeIn">The Contributors</h1>
+    <h1 class="fadeIn">The People</h1>
     <div class="contributors">
       {% for contributor in section.extra.contributors %}
       <div class="contributor">

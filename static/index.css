@@ -121,6 +121,7 @@ img.sharp {
 }
 
 .games .game {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -206,6 +207,7 @@ img.sharp {
 }
 
 .contributors {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
