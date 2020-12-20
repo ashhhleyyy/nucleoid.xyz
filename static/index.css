@@ -3,63 +3,22 @@
 * {
     margin: 0;
     padding: 0;
+    color: #eee;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: .03em;
 }
 
-.background {
+.root {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.background img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-}
-
-/* Content */
-
-.background .content {
-    max-width: 750px;
-    position: relative;
-    text-align: center;
-}
-.background .content h2 {
-    font-size: 50px;
-    color: #ffffff;
-}
-.background .content p {
-    font-size: 30px;
-    color: #ffffff;
-}
-
-.background .contact {
-    padding-top: 36px;
-}
-
-/* Logo */
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 512px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#nucleoidLogo {
-    width: 100%;
-    max-width: 60vw;
+img.sharp {
     image-rendering: crisp-edges;
     image-rendering: pixelated;
 }
@@ -73,9 +32,52 @@
     to   { opacity: 1; }
 }
 
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Logo */
+
+.header {
+    width: 100%;
+    margin: auto;
+}
+
+#nucleoidLogo {
+    width: 512px;
+    max-width: 60vw;
+}
+
+/* Content */
+
+.content {
+    max-width: 60vw;
+    text-align: center;
+}
+
+.content p {
+    margin-top: 16px;
+}
+
+.content code {
+    background: #2c2c2c;
+    border: 3px solid #505050;
+    padding: 2px 8px;
+    border-radius: 16px;
+    font-family: monospace;
+}
+
+.contact {
+    padding-top: 20px;
+}
+
 /* Buttons */
 
-.background a {
+.content a {
     position: relative;
     display: inline-block;
     padding: 12px 36px;
@@ -88,16 +90,63 @@
     background: linear-gradient(80deg, #E3E3E3, #9E9E9E);
 }
 
-.background a:nth-of-type(2) {
-    color: #ffffff;
+.content a:nth-of-type(2) {
     background: linear-gradient(80deg, #2360BD, #646ED5);
 }
 
-.background a {
+.content a {
     transition: 0.4s;
 }
 
-.background a:hover {
+.content a:hover {
     transform: scale(1.1);
     z-index: 5;
+}
+
+/* Games */
+#gamesHeader {
+    margin-top: 60px;
+    font-size: 3vmax;
+    text-align: center;
+}
+
+.games {
+    background-color: #0004;
+    border-radius: 20px;
+    margin: 10px 60px;
+    padding: 20px 0px;
+    max-width: 1000px;
+}
+
+.games .game {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.games .game .desc h3 {
+    font-size: 22px;
+    margin: 0px;
+}
+
+.games .game .desc p {
+    margin-top: 8px;
+}
+
+.games .game img {
+    align-self: left;
+
+    min-width: 140px;
+    max-width: 140px;
+    min-height: 140px;
+    max-height: 140px;
+    margin-right: 10px;
+    
+    border-radius: 10px;
+
+    filter: brightness(100%);
+}
+
+.games .game img:hover {
+    filter: brightness(120%);
+    transition: all 0.1s linear;
 }

@@ -6,22 +6,38 @@
 {% endblock head %}
 
 {% block body %}
-<div class="header">
-  <img src="assets/images/nucleoid_logo.png" alt="Nucleoid's logo" id="nucleoidLogo">
-</div>
-<div class="background">
-  <img src="assets/images/background.png" alt="A screenshot of the Nucleoid Minecraft server">
+<img src="assets/images/background.png" alt="A screenshot of the Nucleoid Minecraft server" id="background">
+
+<div class="root">
+  <div class="header">
+    <img src="assets/images/nucleoid_logo.png" alt="Nucleoid's logo" id="nucleoidLogo" class="sharp">
+  </div>
 
   <div class="content">
     <div class="fadeIn" style="font-size:2vmax;">
       {{ section.content | safe }}
-    </p>
+    </div>
 
     <p class="fadeIn contact" style="font-size:2vmax;">
-      For now, you can find us on: <br>
+      Or you can find us on: <br>
       <a href="https://github.com/NucleoidMC" style="font-size:2vmax;">GitHub</a>
       <a href="https://nucleoid.xyz/discord" style="font-size:2vmax;">Discord</a>
     </p>
+  </div>
+
+  <h1 id="gamesHeader" class="fadeIn">Our Games</h1>
+  <div class="games">
+    {% for page in section.pages %}
+    <div class="game">
+      <a href="{{ page.permalink | safe }}"><img src="{{ page.extra.icon | safe }}" class="sharp"/></a>
+      <div class="desc">
+        <a href="{{ page.permalink | safe }}">
+          <h3>{{ page.title }}</h3>
+        </a>
+        {{page.description | markdown(inline=true) | safe}}
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock body %}

@@ -6,4 +6,4 @@ template = "index.html"
 ## Hello! 👋
 Nucleoid is an effort to build a fully open-source minigames server on modern versions of Minecraft.
 
-This site is currently under construction. 👷‍♀️
+You can join the server at: `nucleoid.xyz`
