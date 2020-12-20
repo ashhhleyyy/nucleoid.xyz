@@ -1,6 +1,6 @@
 +++
 title = "Spleef"
-extra.icon = "assets/images/nucleoid_icon.png"
+extra.header = "assets/images/spleef.png"
 +++
 
 A free-for-all game in which players must try and dig out the ground beneath another player's feet, forcing them to fall to lower levels and eventually lava.  

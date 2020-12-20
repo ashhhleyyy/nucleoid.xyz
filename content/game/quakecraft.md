@@ -1,6 +1,6 @@
 +++
 title = "Quakecraft"
-extra.icon = "assets/images/nucleoid_icon.png"
+extra.header = "assets/images/quakecraft.png"
 +++
 
 A free-for-all game in which players use a variety of projectiles to kill each other. The first person to 24 kills, or the one with the highest kill-count before the time runs out, wins! The weapons include: 

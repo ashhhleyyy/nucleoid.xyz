@@ -24,7 +24,7 @@
       <a href="https://nucleoid.xyz/discord" style="font-size:2vmax;">Discord</a>
     </p>
 
-    <h1 class="fadeIn">Our Games</h1>
+    <h1 class="fadeIn">The Games</h1>
     <div class="games">
       <div class="carousel">
         <span class="control prev">&lt;</span>
@@ -32,8 +32,10 @@
         <div class="scroller">
           {% for page in section.pages %}
           <div class="game">
-            <h2>{{ page.title }}</h2>
-            <img src="{{ page.extra.icon | safe }}" class="sharp"/>
+            <div class="header">
+              <h2>{{ page.title }}</h2>
+              <img src="{{ page.extra.header | safe }}"/>
+            </div>
             <div class="desc">
                 {{page.content | safe}}
             </div>
@@ -43,6 +45,7 @@
       </div>
     </div>
   
+    <h1 class="fadeIn">The Contributors</h1>
     <div class="contributors">
       {% for contributor in section.extra.contributors %}
       <div class="contributor">
