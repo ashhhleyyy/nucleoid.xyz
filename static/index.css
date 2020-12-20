@@ -9,6 +9,10 @@
     letter-spacing: .03em;
 }
 
+ul li {
+    margin-left: 30px;
+}
+
 .root {
     position: relative;
     width: 100%;
@@ -56,7 +60,7 @@ img.sharp {
 
 .content {
     max-width: 60vw;
-    text-align: center;
+    min-width: 300px;
 }
 
 .content p {
@@ -103,24 +107,31 @@ img.sharp {
     z-index: 5;
 }
 
-/* Games */
-#gamesHeader {
+.content h1 {
     margin-top: 60px;
     font-size: 3vmax;
     text-align: center;
 }
 
+/* Games */
+
 .games {
     background-color: #0004;
     border-radius: 20px;
-    margin: 10px 60px;
-    padding: 20px 0px;
-    max-width: 1000px;
 }
 
 .games .game {
     display: flex;
-    margin-bottom: 20px;
+    flex-direction: column;
+    padding: 20px;
+
+    min-width: 100%;
+    scroll-snap-align: center;
+}
+
+.games .game h2 {
+    font-size: 40px;
+    text-align: center;
 }
 
 .games .game .desc h3 {
@@ -149,4 +160,60 @@ img.sharp {
 .games .game img:hover {
     filter: brightness(120%);
     transition: all 0.1s linear;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel .control {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: rgba(95, 106, 117, 0.6);
+}
+
+.carousel .control:hover {
+    background-color: rgba(95, 106, 117, 0.9);
+    cursor: pointer;
+ }
+ .carousel .control.next {
+    right: 15px;
+ }
+ .carousel .control.prev {
+    left: 15px;
+ }
+
+.carousel .scroller {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.contributors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contributors .contributor {
+    padding: 10px;
+    text-align: center;
+    font-size: 90%;
+}
+
+.contributors .contributor img {
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
+
+    border-radius: 10px;
 }

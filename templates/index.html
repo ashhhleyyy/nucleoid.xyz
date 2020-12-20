@@ -14,30 +14,43 @@
   </div>
 
   <div class="content">
-    <div class="fadeIn" style="font-size:2vmax;">
+    <div class="fadeIn" style="text-align:center; font-size:2vmax;">
       {{ section.content | safe }}
     </div>
 
-    <p class="fadeIn contact" style="font-size:2vmax;">
+    <p class="fadeIn contact" style="text-align:center; font-size:2vmax;">
       Or you can find us on: <br>
       <a href="https://github.com/NucleoidMC" style="font-size:2vmax;">GitHub</a>
       <a href="https://nucleoid.xyz/discord" style="font-size:2vmax;">Discord</a>
     </p>
-  </div>
 
-  <h1 id="gamesHeader" class="fadeIn">Our Games</h1>
-  <div class="games">
-    {% for page in section.pages %}
-    <div class="game">
-      <a href="{{ page.permalink | safe }}"><img src="{{ page.extra.icon | safe }}" class="sharp"/></a>
-      <div class="desc">
-        <a href="{{ page.permalink | safe }}">
-          <h3>{{ page.title }}</h3>
-        </a>
-        {{page.description | markdown(inline=true) | safe}}
+    <h1 class="fadeIn">Our Games</h1>
+    <div class="games">
+      <div class="carousel">
+        <span class="control prev">&lt;</span>
+        <span class="control next">&gt;</span>
+        <div class="scroller">
+          {% for page in section.pages %}
+          <div class="game">
+            <h2>{{ page.title }}</h2>
+            <img src="{{ page.extra.icon | safe }}" class="sharp"/>
+            <div class="desc">
+                {{page.content | safe}}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
-    {% endfor %}
+  
+    <div class="contributors">
+      {% for contributor in section.extra.contributors %}
+      <div class="contributor">
+        <img src="https://crafatar.com/avatars/{{contributor.minecraft}}?overlay=true&size=8" class="sharp"/>
+        <h3>{{ contributor.name }}</h3>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 {% endblock body %}

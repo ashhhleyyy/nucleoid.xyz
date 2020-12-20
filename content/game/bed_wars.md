@@ -1,6 +1,5 @@
 +++
 title = "BedWars"
-description = "A team-based game where players must bridge over the void to other people's bases in order to break their beds."
 extra.icon = "assets/images/nucleoid_icon.png"
 +++
 

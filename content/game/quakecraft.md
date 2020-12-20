@@ -1,6 +1,5 @@
 +++
 title = "Quakecraft"
-description = "A free-for-all game in which players use a variety of projectiles to kill each other. The first person to 24 kills wins!"
 extra.icon = "assets/images/nucleoid_icon.png"
 +++
 

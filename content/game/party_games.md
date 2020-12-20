@@ -1,6 +1,5 @@
 +++
 title = "Party Games"
-description = "A game that consists of other short games, all rolled into one for the players who cannot decide."
 extra.icon = "assets/images/nucleoid_icon.png"
 +++
 

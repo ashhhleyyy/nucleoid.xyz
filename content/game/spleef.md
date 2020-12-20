@@ -1,6 +1,5 @@
 +++
 title = "Spleef"
-description = "A free-for-all game in which players must try and dig out the ground beneath another player's feet, forcing them to fall to lower levels and eventually lava."
 extra.icon = "assets/images/nucleoid_icon.png"
 +++
 
