@@ -19,7 +19,7 @@ name = "Shock_Micro"
 minecraft = "13c89fae816e438c94ab3cd4bc4f55b4"
 +++
 
-Spleef is free-for-all game in which players must try and dig out the ground beneath another player's feet, forcing them to fall to lower levels and, eventually, into lava!  
+Spleef is a free-for-all game in which players must dig out the blocks beneath another player's feet, forcing them to fall to lower levels and, eventually, into lava!  
 
-There are many variations of the Spleef minigame with varying blocks such as snow, ice, magma, slime, and honey blocks, which all introduce interesting twists to regular gameplay.
-In some modes, blocks will break behind players as they move, and in others, players will receive snowballs which they can use to destroy blocks from a distance.
+The game can involve varying blocks such as snow, ice, magma, and slime/honey blocks, which all introduce interesting twists to gameplay.
+In some modes, blocks will decay behind players, and in others, players will receive snowballs which they can use to destroy blocks from a distance.
