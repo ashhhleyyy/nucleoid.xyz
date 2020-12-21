@@ -2,7 +2,7 @@
 title = "Corn Maze"
 
 [extra]
-#header = "assets/images/corn_maze.png"
+header = "assets/images/corn_maze.png"
 link = "https://github.com/NucleoidMC/Corn-Maze"
 
 [[extra.contributors]]

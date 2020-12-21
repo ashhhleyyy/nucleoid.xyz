@@ -2,7 +2,7 @@
 title = "Territory Battle"
 
 [extra]
-#header = "assets/images/territory_battle.png"
+header = "assets/images/territory_battle.png"
 link = "https://github.com/NucleoidMC/Territory-Battle"
 
 [[extra.contributors]]

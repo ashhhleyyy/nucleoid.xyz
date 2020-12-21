@@ -2,7 +2,7 @@
 title = "Dé à Coudre"
 
 [extra]
-#header = "assets/images/deacoudre.png"
+header = "assets/images/deacoudre.png"
 link = "https://github.com/NucleoidMC/D-Coudre"
 
 [[extra.contributors]]

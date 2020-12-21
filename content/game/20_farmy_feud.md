@@ -2,7 +2,7 @@
 title = "Farmy Feud"
 
 [extra]
-#header = "assets/images/farmy_feud.png"
+header = "assets/images/farmy_feud.png"
 link = "https://github.com/NucleoidMC/farmy-feud"
 
 [[extra.contributors]]

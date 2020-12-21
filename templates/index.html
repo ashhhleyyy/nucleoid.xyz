@@ -29,7 +29,7 @@
   </div>
 
   <div class="content">
-    <h1 class="fadeIn">The Games</h1>
+    <h1>The Games</h1>
     <div id="games">
       <div class="carousel">
         <span class="control prev">&lt;</span>
@@ -59,7 +59,27 @@
       </div>
     </div>
 
-    <h1 class="fadeIn">The Contributors</h1>
+    <h1>Development Updates</h1>
+    <div id="blogs">
+      {% set blogs = get_section(path="blog/_index.md") %}
+      {% for blog_page in blogs.pages | slice(end=3) %}
+      <div class="blog_entry">
+        <a href="{{blog_page.permalink}}">
+          <img src="{{get_url(path=blog_page.extra.image)}}"> 
+        </a>
+        <div>
+          <a href="{{blog_page.permalink}}">
+            <h3>{{blog_page.title}}</h3>
+          </a>
+          <h4>{{blog_page.date}}</h4>
+          <p>{{blog_page.content | striptags | truncate(length=200)}}</p>
+        </div>
+      </div>
+      {% endfor %}
+      <a href="{{blogs.permalink}}"><p>View all development posts...</p></a>
+    </div>
+
+    <h1>The Contributors</h1>
     <div class="contributors">
       {% for contributor in section.extra.contributors %}
       <div class="contributor">

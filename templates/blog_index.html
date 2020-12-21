@@ -1,0 +1,26 @@
+{% extends "blog.html" %}
+
+{% block content %}
+<div>
+  <h1 class="title">
+    {{ section.title }}
+  </h1>
+  <p>{{ section.content | safe }}</p>
+  <div id="blogs">
+    {% for page in section.pages %}
+    <div class="blog_entry">
+      <a href="{{page.permalink}}">
+        <img src="{{get_url(path=page.extra.image)}}"> 
+      </a>
+      <div>
+        <a href="{{page.permalink}}">
+          <h3>{{page.title}}</h3>
+        </a>
+        <h4>{{page.date}}</h4>
+        <p>{{page.content | striptags | truncate(length=200)}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock body %}

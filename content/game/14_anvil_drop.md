@@ -2,7 +2,7 @@
 title = "Anvil Drop"
 
 [extra]
-#header = "assets/images/anvil_drop.png"
+header = "assets/images/anvil_drop.png"
 link = "https://github.com/NucleoidMC/Anvil-Drop"
 
 [[extra.contributors]]

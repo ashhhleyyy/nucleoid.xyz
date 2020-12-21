@@ -2,7 +2,7 @@
 title = "Totem Hunt"
 
 [extra]
-#header = "assets/images/totem_hunt.png"
+header = "assets/images/totem_hunt.png"
 link = "https://github.com/NucleoidMC/Totem-Hunt"
 
 [[extra.contributors]]

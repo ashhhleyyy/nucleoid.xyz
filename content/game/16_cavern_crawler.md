@@ -2,7 +2,7 @@
 title = "Cavern Crawler"
 
 [extra]
-#header = "assets/images/cavern_crawler.png"
+header = "assets/images/cavern_crawler.png"
 link = "https://github.com/NucleoidMC/cavern-crawler"
 
 [[extra.contributors]]
