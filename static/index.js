@@ -13,13 +13,16 @@ document.querySelectorAll('.carousel').forEach(carousel => {
 });
 
 document.querySelectorAll('.scroll_indicator').forEach(scrollIndicator => {
-    document.addEventListener('scroll', function() {
+    document.addEventListener('scroll', scroll);
+    document.addEventListener('touchmove', scroll);
+    document.addEventListener('gesturechange', scroll);
+
+    function scroll() {
         var top = window.pageYOffset || document.documentElement.scrollTop;
-        console.log(top);
         if (top > 10) {
             scrollIndicator.classList.add("scrolled");
         } else {
             scrollIndicator.classList.remove("scrolled");
         }
-    });
+    }
 });
