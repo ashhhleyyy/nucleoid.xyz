@@ -11,7 +11,12 @@ minecraft = "c3ed4d52fb4f4964ba1b9cda2453741e"
 [[extra.contributors]]
 name = "SuperCoder"
 minecraft = "e60d6f03ff174984a801681e5be8dac3"
-
+[[extra.contributors]]
+name = "Patbox"
+minecraft = "f5a216d9d66049968d0fd49053677676"
+[[extra.contributors]]
+name = "Hmmarch"
+minecraft = "4d6ee28d9bd345a5a5c4c39b87827b9c"
 +++
 
 BedWars is a team-based game where players must bridge over a void to each other's bases in order to break their beds. Once a bed is broken, that team is unable to respawn!
