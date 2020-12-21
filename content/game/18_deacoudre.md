@@ -8,6 +8,12 @@ link = "https://github.com/NucleoidMC/D-Coudre"
 [[extra.contributors]]
 name = "CatCore"
 minecraft = "5bb676efecee4258ae1f53e163839585"
+[[extra.contributors]]
+name = "Gegy"
+minecraft = "c3ed4d52fb4f4964ba1b9cda2453741e"
+[[extra.contributors]]
+name = "haykam"
+minecraft = "c705fc7d09624d1e905bb83d81d9b4ec"
 +++
 
 Dé à Coudre is a free-for-all turn-based game in which players compete to be the last one standing.
