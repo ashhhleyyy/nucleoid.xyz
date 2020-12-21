@@ -13,7 +13,7 @@ ul li {
     margin-left: 30px;
 }
 
-.root {
+#root {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -37,19 +37,51 @@ img.sharp {
 }
 
 #background {
+    background-color: #0f0f0f;
     position: fixed;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -3;
+    pointer-events: none;
+}
+
+#server_background {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
     z-index: -2;
     pointer-events: none;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll_indicator {
+    margin-top: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2vmax;
+    cursor: default;
+    opacity: 100%;
+    transition: 0.2s;
+}
+
+.scroll_indicator.scrolled {
+    opacity: 0%;
+    transition: 0.2s;
 }
 
 /* Logo */
 
 .header {
     width: 100%;
-    margin: auto;
 }
 
 #nucleoidLogo {
@@ -77,13 +109,13 @@ img.sharp {
     user-select: all;
 }
 
-.contact {
+#contact {
     padding-top: 20px;
 }
 
 /* Buttons */
 
-.contact a {
+#contact a {
     position: relative;
     display: inline-block;
     padding: 12px 36px;
@@ -96,15 +128,15 @@ img.sharp {
     background: linear-gradient(80deg, #E3E3E3, #9E9E9E);
 }
 
-.contact a:nth-of-type(2) {
+#contact a:nth-of-type(2) {
     background: linear-gradient(80deg, #2360BD, #646ED5);
 }
 
-.contact a {
+#contact a {
     transition: 0.4s;
 }
 
-.contact a:hover {
+#contact a:hover {
     transform: scale(1.1);
     z-index: 5;
 }
@@ -117,12 +149,7 @@ img.sharp {
 
 /* Games */
 
-.games {
-    background-color: #111a;
-    border-radius: 20px;
-}
-
-.games .item {
+#games .item {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -132,26 +159,26 @@ img.sharp {
     scroll-snap-align: center;
 }
 
-.games .item .desc h3 {
+#games .item .desc h3 {
     font-size: 22px;
     margin: 0px;
 }
 
-.games .item .desc {
+#games .item .desc {
     font-size: 20px;
 }
 
-.games .item .desc p {
+#games .item .desc p {
     margin-top: 8px;
 }
 
-.games .item .header {
+#games .item .header {
     width: 100%;
     margin: 0;
     position: relative;
 }
 
-.games .item .header h2 {
+#games .item .header h2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -161,7 +188,7 @@ img.sharp {
     z-index: 2;
 }
 
-.games .item .header img {
+#games .item .header img {
     z-index: 0;
     width: 100%;
     filter: brightness(80%);
@@ -169,7 +196,7 @@ img.sharp {
     border: 2px solid rgb(133, 247, 255);
 }
 
-.games .item .header img:hover {
+#games .item .header img:hover {
     filter: brightness(60%);
     transition: all 0.1s linear;
 }
@@ -186,13 +213,13 @@ img.sharp {
     line-height: 40px;
     text-align: center;
     border-radius: 100%;
-    background-color: #555a;
+    background-color: #888a;
     z-index: 2;
     user-select: none;
 }
 
 .carousel .control:hover {
-    background-color: #555e;
+    background-color: #888e;
     transition: all 0.1s linear;
     cursor: pointer;
  }
@@ -232,4 +259,14 @@ img.sharp {
     height: 6vmax;
 
     border-radius: 10%;
+}
+
+.contributors .contributor.small {
+    padding: 6px;
+    font-size: max(8px, .75vmax);
+}
+
+.contributors .contributor.small img {
+    width: 4vmax;
+    height: 4vmax;
 }

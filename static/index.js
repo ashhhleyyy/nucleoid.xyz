@@ -11,3 +11,15 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         scroller.scrollBy({ left: -item.clientWidth, top: 0, behavior: 'smooth' });
     });
 });
+
+document.querySelectorAll('.scroll_indicator').forEach(scrollIndicator => {
+    document.addEventListener('scroll', function() {
+        var top = window.pageYOffset || document.documentElement.scrollTop;
+        console.log(top);
+        if (top > 10) {
+            scrollIndicator.classList.add("scrolled");
+        } else {
+            scrollIndicator.classList.remove("scrolled");
+        }
+    });
+});

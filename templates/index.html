@@ -6,26 +6,32 @@
 {% endblock head %}
 
 {% block body %}
-<img src="assets/images/background.png" alt="A screenshot of the Nucleoid Minecraft server" id="background">
+<div id="background"></div>
+<img src="assets/images/background.png" alt="A screenshot of the Nucleoid Minecraft server" id="server_background">
 
-<div class="root">
-  <div class="header">
-    <img src="assets/images/nucleoid_logo.png" alt="Nucleoid's logo" id="nucleoidLogo" class="sharp">
+<div id="root">
+  <div id="home">
+    <div class="header">
+      <img src="assets/images/nucleoid_logo.png" alt="Nucleoid's logo" id="nucleoidLogo" class="sharp">
+    </div>
+
+    <div class="content">
+      <div class="fadeIn" style="text-align:center; font-size:max(16px, 2vmax);">
+        {{ section.content | safe }}
+      </div>
+
+      <p id="contact" class="fadeIn" style="text-align:center; font-size:max(16px, 2vmax);">
+        Or you can find us on: <br>
+        <a href="https://github.com/NucleoidMC" style="font-size:2vmax;">GitHub</a>
+        <a href="https://nucleoid.xyz/discord" style="font-size:2vmax;">Discord</a>
+      </p>
+    </div>
+    <p class="scroll_indicator">⌄ Scroll ⌄</p>
   </div>
 
   <div class="content">
-    <div class="fadeIn" style="text-align:center; font-size:max(16px, 2vmax);">
-      {{ section.content | safe }}
-    </div>
-
-    <p class="fadeIn contact" style="text-align:center; font-size:max(16px, 2vmax);">
-      Or you can find us on: <br>
-      <a href="https://github.com/NucleoidMC" style="font-size:2vmax;">GitHub</a>
-      <a href="https://nucleoid.xyz/discord" style="font-size:2vmax;">Discord</a>
-    </p>
-
     <h1 class="fadeIn">The Games</h1>
-    <div class="games">
+    <div id="games">
       <div class="carousel">
         <span class="control prev">&lt;</span>
         <span class="control next">&gt;</span>
@@ -34,15 +40,15 @@
           <div class="item">
             <div class="header">
               <h2 style="pointer-events:none;">{{ page.title }}</h2>
-              <a href="{{page.extra.link | safe}}"><img src="{{ page.extra.header | safe }}"/></a>
+              <a href="{{page.extra.link | safe}}"><img src="{{ page.extra.header | safe }}" /></a>
             </div>
             <div class="desc">
-                {{page.content | safe}}
+              {{page.content | safe}}
             </div>
-            <div class="contributors" style="margin-top: auto;">
+            <div class="contributors" style="margin-top:auto;padding:4px;justify-content:right;">
               {% for contributor in page.extra.contributors %}
-              <div class="contributor">
-                <img src="https://crafatar.com/avatars/{{contributor.minecraft}}?overlay=true&size=8" class="sharp"/>
+              <div class="contributor small">
+                <img src="https://crafatar.com/avatars/{{contributor.minecraft}}?overlay=true&size=8" class="sharp" />
                 <h3>{{ contributor.name }}</h3>
               </div>
               {% endfor %}
@@ -52,17 +58,18 @@
         </div>
       </div>
     </div>
-  
+
     <h1 class="fadeIn">The Contributors</h1>
     <div class="contributors">
       {% for contributor in section.extra.contributors %}
       <div class="contributor">
-        <img src="https://crafatar.com/avatars/{{contributor.minecraft}}?overlay=true&size=8" class="sharp"/>
+        <img src="https://crafatar.com/avatars/{{contributor.minecraft}}?overlay=true&size=8" class="sharp" />
         <h3>{{ contributor.name }}</h3>
       </div>
       {% endfor %}
     </div>
-    <script src="carousel.js"></script>
   </div>
+  <script src="index.js"></script>
+</div>
 </div>
 {% endblock body %}
