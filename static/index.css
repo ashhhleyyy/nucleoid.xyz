@@ -24,8 +24,11 @@ ul li {
 }
 
 img.sharp {
-    image-rendering: crisp-edges;
     image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
 }
 
 .fadeIn {
@@ -206,6 +209,7 @@ img.sharp {
 
 .carousel {
     position: relative;
+    overflow: hidden;
 }
 
 .carousel .control {
@@ -240,6 +244,10 @@ img.sharp {
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+.carousel .scroller::-webkit-scrollbar { 
+    display: none;
 }
 
 .contributors {

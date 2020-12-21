@@ -45,7 +45,8 @@
             <div class="desc">
               {{page.content | safe}}
             </div>
-            <div class="contributors" style="margin-top:auto;padding:4px;justify-content:right;">
+            <div class="contributors" style="margin-top:auto;padding:4px;width:100%;">
+              <div style="margin-left:auto;"></div>
               {% for contributor in page.extra.contributors %}
               <div class="contributor small">
                 <img src="https://crafatar.com/avatars/{{contributor.minecraft}}?overlay=true&size=8" class="sharp" />
