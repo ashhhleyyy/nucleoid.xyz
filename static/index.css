@@ -9,6 +9,10 @@
     letter-spacing: .03em;
 }
 
+body {
+    background-color: #142117;
+}
+
 ul li {
     margin-left: 30px;
 }
@@ -38,16 +42,6 @@ img.sharp {
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
-
-#background {
-    background-color: #142117;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -3;
-    pointer-events: none;
 }
 
 #server_background {
