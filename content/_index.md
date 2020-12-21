@@ -45,26 +45,26 @@ minecraft = "dca7cb177f1349c89ab4a5267f8f53e5"
 name = "Gimli_007"
 minecraft = "76b9f6d9d392497a8e81f41f715362a7"
 [[extra.contributors]]
-name = "IamSeahawk"
-minecraft = "63e167f5026b49499a12727b8b1ff291"
-[[extra.contributors]]
 name = "insert.meme23"
 minecraft = "3744c0a9fb8541b78066b78ca1dc4bc6"
 [[extra.contributors]]
+name = "TheBrokenTwo"
+minecraft = "4a7864f9767844699df8039092b44f56"
+[[extra.contributors]]
 name = "SilverCubes"
 minecraft = "1db024ef412647bf8aea71317f7a1b7e"
+[[extra.contributors]]
+name = "IamSeahawk"
+minecraft = "63e167f5026b49499a12727b8b1ff291"
 [[extra.contributors]]
 name = "hydos"
 minecraft = "3c439ef2618241aea1f3b4d8def57821"
 [[extra.contributors]]
 name = "ramidzkh"
 minecraft = "836c8cc4bd0a45b3bced72bbb3af2d0d"
-[[extra.contributors]]
-name = "TheBrokenTwo"
-minecraft = "4a7864f9767844699df8039092b44f56"
 +++
 
 ## Hello! 👋
 Nucleoid is an effort to build a fully open-source minigames server on modern versions of Minecraft.
 
-You can join the server at: `nucleoid.xyz`
+You can join us with **Minecraft 1.16.4** at: `nucleoid.xyz`
