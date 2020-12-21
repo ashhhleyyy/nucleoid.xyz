@@ -15,4 +15,4 @@ minecraft = "c3ed4d52fb4f4964ba1b9cda2453741e"
 
 Loop-de-Loop is a free-for-all party game in which players must fly through loops and reach the end of the course as fast as possible! A player can get fireworks back after depleting them by failing or going through a ring. 
 
-There is additionally a "Flappy Hoop" version, which plays similar to Flappy Bird, but in 3D! 
+There is additionally a "Flappy Loop" version, which plays similar to Flappy Bird, but in 3D! 

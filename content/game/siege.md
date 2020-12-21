@@ -28,7 +28,7 @@ name = "TheBrokenTwo"
 minecraft = "4a7864f9767844699df8039092b44f56"
 +++
 
-A work-in-progress point-capture team-based game in which the **Attackers** must take over all of the territory from the **Defenders** before time runs out. 
+Siege is a work-in-progress point-capture team-based game in which the **Attackers** must take over all of the territory from the **Defenders** before time runs out. 
 Players can choose from a variety of kits, but resources are limited, and must be restocked by using an ender chest. 
 
 The kits currently include: the Archer, the Soldier, the Shield Bearer, and the Constructor.

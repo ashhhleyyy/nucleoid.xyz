@@ -40,7 +40,7 @@
           <div class="item">
             <div class="header">
               <h2 style="pointer-events:none;">{{ page.title }}</h2>
-              <a href="{{page.extra.link | safe}}"><img src="{{ page.extra.header | safe }}" /></a>
+              <a href="{{page.extra.link | safe}}"><img src="{{ page.extra.header | default(value='assets/images/fallback.png') | safe }}" /></a>
             </div>
             <div class="desc">
               {{page.content | safe}}
