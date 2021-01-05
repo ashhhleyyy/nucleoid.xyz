@@ -82,7 +82,7 @@ ul li {
     margin-top: 16px;
 }
 
-.content code {
+code {
     background: #2c2c2c;
     border: 3px solid #505050;
     padding: 2px 8px;
