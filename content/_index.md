@@ -66,6 +66,21 @@ minecraft = "3c439ef2618241aea1f3b4d8def57821"
 name = "ramidzkh"
 minecraft = "836c8cc4bd0a45b3bced72bbb3af2d0d"
 [[extra.contributors]]
+name = "Potatoboy9999"
+minecraft = "76a438ae173240b598a60c1ac7482225"
+[[extra.contributors]]
+name = "LordFishSticks"
+minecraft = "ef21121ec58f49fb9125529e0945c347"
+[[extra.contributors]]
+name = "cal6541"
+minecraft = "8d6dddfcb3eb4d4a9e98754aaed544e6"
+[[extra.contributors]]
+name = "yitzy"
+minecraft = "3af33e5e2dc64915b34f178f7b2f5e50"
+[[extra.contributors]]
+name = "antek324980"
+minecraft = "f1bade07a7764245ae92b749078c99e3"
+[[extra.contributors]]
 name = "Expora9"
 minecraft = "8b07d8ad352e4b86b1bc2d2dad269c4b"
 +++
