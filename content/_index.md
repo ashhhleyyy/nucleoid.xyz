@@ -69,6 +69,12 @@ minecraft = "836c8cc4bd0a45b3bced72bbb3af2d0d"
 name = "Potatoboy9999"
 minecraft = "76a438ae173240b598a60c1ac7482225"
 [[extra.contributors]]
+name = "RedstoneParadox"
+minecraft = "f2d4f5123ee144288332fd84680bc920"
+[[extra.contributors]]
+name = "Tom_The_Geek"
+minecraft = "07e92b46838640678f728ab96e606fb7"
+[[extra.contributors]]
 name = "LordFishSticks"
 minecraft = "ef21121ec58f49fb9125529e0945c347"
 [[extra.contributors]]
