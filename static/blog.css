@@ -78,6 +78,17 @@
     font-family: monospace;
 }
 
+#content blockquote {
+    background: #2c2c2c;
+    border-left: 8px solid #505050;
+    margin: 10px 10px;
+    padding: 5px 10px;
+}
+
+#content blockquote p {
+    display: inline;
+}
+
 #blogs {
     margin: 20px;
 }
