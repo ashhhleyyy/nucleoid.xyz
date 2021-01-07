@@ -1,6 +1,6 @@
 +++
 title = "How We Make Our Maps"
-date = 2021-07-01
+date = 2021-01-07
 
 extra.image = "assets/images/blog/mapmaking.png"
 +++
