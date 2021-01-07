@@ -54,9 +54,19 @@ ul li {
     transition: 0.2s;
 }
 
-.scroll_indicator.scrolled {
+.scroll_indicator.hidden {
     opacity: 0%;
     transition: 0.2s;
+}
+
+#serverStatus {
+    opacity: 100%;
+    transition: 1s;
+}
+
+#serverStatus.hidden {
+    opacity: 0%;
+    transition: 1s;
 }
 
 /* Logo */

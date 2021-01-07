@@ -93,5 +93,3 @@ minecraft = "8b07d8ad352e4b86b1bc2d2dad269c4b"
 
 ## Hello! 👋
 Nucleoid is an effort to build a fully open-source minigames server on modern versions of Minecraft.
-
-You can join us with **Minecraft 1.16.4** at: `nucleoid.xyz`

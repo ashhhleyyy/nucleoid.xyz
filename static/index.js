@@ -20,9 +20,41 @@ document.querySelectorAll('.scroll_indicator').forEach(scrollIndicator => {
     function scroll() {
         var top = window.pageYOffset || document.documentElement.scrollTop;
         if (top > 10) {
-            scrollIndicator.classList.add("scrolled");
+            scrollIndicator.classList.add("hidden");
         } else {
-            scrollIndicator.classList.remove("scrolled");
+            scrollIndicator.classList.remove("hidden");
         }
     }
 });
+
+const serverStatus = document.querySelector("#serverStatus");
+
+const statusRequest = new XMLHttpRequest();
+statusRequest.onreadystatechange = function() { 
+    if (statusRequest.readyState == 4) {
+        if (statusRequest.status == 200) {
+            const json = JSON.parse(statusRequest.responseText);
+            const gameVersion = json.game_version;
+            const playerCount = json.players.length;
+    
+            var content = "You can join us";
+            if (playerCount > 2) {
+                content = "You can join " + playerCount + " other players";
+            } else if (playerCount == 1) {
+                content = "You can join 1 other player";
+            }
+
+            if (gameVersion != "") {
+                content += " with Minecraft " + gameVersion;
+            }
+            
+            content += " at: <code>nucleoid.xyz</code>"
+
+            serverStatus.innerHTML = content;
+        }
+
+        serverStatus.classList.remove("hidden");
+    }
+}
+statusRequest.open("GET", "https://api.nucleoid.xyz/status/play/", true);
+statusRequest.send(null);
