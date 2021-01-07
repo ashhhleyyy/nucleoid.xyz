@@ -1,0 +1,36 @@
+{% extends "blog.html" %}
+
+{% block og %}
+<meta property="og:title" content="Nucleoid Blogs">
+<meta property="og:description" content="Nucleoid is an effort to build a fully open-source Minecraft minigames server">
+<meta property="og:image" content="{{config.base_url}}/assets/images/nucleoid_icon.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Nucleoid's logo">
+<meta property="og:image:width" content="256">
+<meta property="og:image:height" content="256">
+{% endblock og %}
+
+{% block content %}
+<div>
+  <h1 class="title">
+    {{ section.title }}
+  </h1>
+  <p>{{ section.content | safe }}</p>
+  <div id="blogs">
+    {% for page in section.pages %}
+    <div class="blog_entry">
+      <a href="{{page.permalink}}">
+        <img src="{{get_url(path=page.extra.image)}}"> 
+      </a>
+      <div>
+        <a href="{{page.permalink}}">
+          <h3>{{page.title}}</h3>
+        </a>
+        <h4>{{page.date}}</h4>
+        <p>{{page.content | striptags | truncate(length=200)}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock body %}
