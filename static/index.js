@@ -4,12 +4,19 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     const prev = carousel.querySelector('.control.prev');
     const item = carousel.querySelector('.item');
     
+    scroller.appendChild(scroller.firstElementChild.cloneNode(true));
+    
     next.addEventListener('click', function() {
+        if (scroller.scrollLeft + item.clientWidth >= scroller.scrollWidth) {
+            scroller.scrollBy({ left: -scroller.scrollWidth, top: 0 });
+        }
         scroller.scrollBy({ left: item.clientWidth, top: 0, behavior: 'smooth' });
     });
     prev.addEventListener('click', function() {
-        scroller.scrollBy({ left: -item.clientWidth, top: 0, behavior: 'smooth' });
-    });
+        if (scroller.scrollLeft == 0) {
+            scroller.scrollBy({ left: scroller.scrollWidth, top: 0 });
+        }
+        scroller.scrollBy({ left: -item.clientWidth, top: 0, behavior: 'smooth' });    });
 });
 
 document.querySelectorAll('.scroll_indicator').forEach(scrollIndicator => {
