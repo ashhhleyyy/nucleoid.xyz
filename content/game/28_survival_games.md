@@ -2,7 +2,7 @@
 title = "Survival Games"
 
 [extra]
-header = "assets/images/fallback.png"
+header = "assets/images/survival_games.png"
 link = "https://github.com/NucleoidMC/survival-games"
 
 [[extra.contributors]]
