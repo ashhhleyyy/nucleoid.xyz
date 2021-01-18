@@ -84,6 +84,12 @@ minecraft = "8d6dddfcb3eb4d4a9e98754aaed544e6"
 name = "yitzy"
 minecraft = "3af33e5e2dc64915b34f178f7b2f5e50"
 [[extra.contributors]]
+name = "MrTurtle"
+minecraft = "9f84e819377b4e61b3393a9ad7214a91"
+[[extra.contributors]]
+name = "Redblueflame"
+minecraft = "fdbbc670dac646139165960cc2b34647"
+[[extra.contributors]]
 name = "antek324980"
 minecraft = "f1bade07a7764245ae92b749078c99e3"
 [[extra.contributors]]

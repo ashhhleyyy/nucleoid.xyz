@@ -3,9 +3,9 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     const next = carousel.querySelector('.control.next');
     const prev = carousel.querySelector('.control.prev');
     const item = carousel.querySelector('.item');
-    
+
     scroller.appendChild(scroller.firstElementChild.cloneNode(true));
-    
+
     next.addEventListener('click', function() {
         if (scroller.scrollLeft + item.clientWidth >= scroller.scrollWidth) {
             scroller.scrollBy({ left: -scroller.scrollWidth, top: 0 });
