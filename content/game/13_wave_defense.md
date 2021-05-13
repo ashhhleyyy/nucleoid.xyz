@@ -11,6 +11,9 @@ minecraft = "e60d6f03ff174984a801681e5be8dac3"
 [[extra.contributors]]
 name = "Gegy"
 minecraft = "c3ed4d52fb4f4964ba1b9cda2453741e"
+[[extra.contributors]]
+name = "Mante"
+minecraft = "ada2d01e33d74e6b93cb18e50e03176f"
 
 +++
 

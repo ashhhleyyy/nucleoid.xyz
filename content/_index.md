@@ -78,9 +78,6 @@ minecraft = "07e92b46838640678f728ab96e606fb7"
 name = "LordFishSticks"
 minecraft = "ef21121ec58f49fb9125529e0945c347"
 [[extra.contributors]]
-name = "cal6541"
-minecraft = "8d6dddfcb3eb4d4a9e98754aaed544e6"
-[[extra.contributors]]
 name = "yitzy"
 minecraft = "3af33e5e2dc64915b34f178f7b2f5e50"
 [[extra.contributors]]
@@ -89,6 +86,24 @@ minecraft = "9f84e819377b4e61b3393a9ad7214a91"
 [[extra.contributors]]
 name = "Redblueflame"
 minecraft = "fdbbc670dac646139165960cc2b34647"
+[[extra.contributors]]
+name = "Hugman"
+minecraft = "c789cee4c9fb4c1b8a58fa64dff0034f"
+[[extra.contributors]]
+name = "Mante"
+minecraft = "ada2d01e33d74e6b93cb18e50e03176f"
+[[extra.contributors]]
+name = "silkepus"
+minecraft = "82ed56d4c36d48358a6adfa9c9eb4b53"
+[[extra.contributors]]
+name = "HarvestJones"
+minecraft = "c9bfdea004ca49888ad20eab3ded6c40"
+[[extra.contributors]]
+name = "sockfriends"
+minecraft = "600c018bc8fc44d5abdb52879de2cd41"
+[[extra.contributors]]
+name = "cal6541"
+minecraft = "8d6dddfcb3eb4d4a9e98754aaed544e6"
 [[extra.contributors]]
 name = "antek324980"
 minecraft = "f1bade07a7764245ae92b749078c99e3"
