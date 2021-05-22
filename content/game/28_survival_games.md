@@ -9,6 +9,9 @@ link = "https://github.com/NucleoidMC/survival-games"
 name = "SuperCoder"
 minecraft = "e60d6f03ff174984a801681e5be8dac3"
 [[extra.contributors]]
+name = "yitzy_"
+minecraft = "3af33e5e2dc64915b34f178f7b2f5e50"
+[[extra.contributors]]
 name = "Gegy"
 minecraft = "c3ed4d52fb4f4964ba1b9cda2453741e"
 [[extra.contributors]]
