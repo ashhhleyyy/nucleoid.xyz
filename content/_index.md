@@ -102,6 +102,12 @@ minecraft = "c9bfdea004ca49888ad20eab3ded6c40"
 name = "sockfriends"
 minecraft = "600c018bc8fc44d5abdb52879de2cd41"
 [[extra.contributors]]
+name = "Siuolplex"
+minecraft = "07cb3dfdee1d4ecfb5b5f70d317a82eb"
+[[extra.contributors]]
+name = "QPCrummer"
+minecraft = "add1b0bdf16545a68033f2dc898bb27f"
+[[extra.contributors]]
 name = "cal6541"
 minecraft = "8d6dddfcb3eb4d4a9e98754aaed544e6"
 [[extra.contributors]]
