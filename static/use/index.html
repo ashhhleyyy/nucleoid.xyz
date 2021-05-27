@@ -156,14 +156,19 @@ SOFTWARE.
                             metadata_url: createMetaUrl('xyz.nucleoid', 'plasmid'),
                         },
                         {
-                            display_name: 'DisguiseLib',
+                            display_name: 'DisguiseLib (fabric)',
                             github_repo: 'https://github.com/NucleoidMC/DisguiseLib',
-                            metadata_url: createMetaUrl('xyz.nucleoid', 'DisguiseLib'),
+                            metadata_url: createMetaUrl('xyz.nucleoid', 'disguiselib-fabric'),
                         },
                         {
                             display_name: 'Substrate',
                             github_repo: 'https://github.com/NucleoidMC/substrate',
                             metadata_url: createMetaUrl('xyz.nucleoid', 'substrate'),
+                        },
+                        {
+                            display_name: 'Stimuli',
+                            github_repo: 'https://github.com/NucleoidMC/stimuli',
+                            metadata_url: createMetaUrl('xyz.nucleoid', 'stimuli'),
                         },
                         {
                             display_name: 'more-codecs',
@@ -174,6 +179,31 @@ SOFTWARE.
                             display_name: 'server-translations-api',
                             github_repo: 'https://github.com/arthurbambou/Server-Translations/',
                             metadata_url: createMetaUrl('fr.catcore', 'server-translations-api'),
+                        },
+                        {
+                            display_name: 'hologram-api',
+                            github_repo: 'https://github.com/Patbox/HologramAPI/',
+                            metadata_url: createMetaUrl('eu.pb4', 'hologram-api'),
+                        },
+                        {
+                            display_name: 'placeholder-api',
+                            github_repo: 'https://github.com/Patbox/FabricPlaceholderAPI/',
+                            metadata_url: createMetaUrl('eu.pb4', 'placeholder-api'),
+                        },
+                        {
+                            display_name: 'sidebar-api',
+                            github_repo: 'https://github.com/Patbox/SidebarAPI/',
+                            metadata_url: createMetaUrl('eu.pb4', 'sidebar-api'),
+                        },
+                        {
+                            display_name: 'polymer',
+                            github_repo: 'https://github.com/Patbox/polymer/',
+                            metadata_url: createMetaUrl('eu.pb4', 'polymer'),
+                        },
+                        {
+                            display_name: 'sgui',
+                            github_repo: 'https://github.com/Patbox/sgui/',
+                            metadata_url: createMetaUrl('eu.pb4', 'sgui'),
                         }
                     ].forEach(createLibraryBadge);
                 </script>
@@ -269,13 +299,11 @@ SOFTWARE.
                 const parser = new DOMParser();
                 function getLibraryVersion(maven, group, artifact, callback) {
                     const metadata_url = maven + group.replace('.', '/') + '/' + artifact + '/maven-metadata.xml';
-                    console.log(metadata_url);
                     fetch(metadata_url)
                         .then(res => res.text())
                         .then(text => parser.parseFromString(text, 'text/xml'))
                         .then(doc => {
                             const latestVersion = doc.getElementsByTagName('latest')[0].innerHTML;
-                            console.log(`${group}:${artifact}:${latestVersion}`)
                             callback(latestVersion);
                         });
                 }
