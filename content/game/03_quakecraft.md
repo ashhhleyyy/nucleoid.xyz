@@ -9,9 +9,6 @@ link = "https://github.com/LambdAurora/quakecraft"
 name = "LambdAurora"
 minecraft = "aa7e0904a404417b944d909b994f3abb"
 [[extra.contributors]]
-name = "Hmmarch"
-minecraft = "4d6ee28d9bd345a5a5c4c39b87827b9c"
-[[extra.contributors]]
 name = "Snorps"
 minecraft = "222c1122f06842f185d4d4320357b40c"
 [[extra.contributors]]

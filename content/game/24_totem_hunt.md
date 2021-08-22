@@ -9,9 +9,6 @@ link = "https://github.com/NucleoidMC/Totem-Hunt"
 name = "haykam"
 minecraft = "c705fc7d09624d1e905bb83d81d9b4ec"
 [[extra.contributors]]
-name = "Hmmarch"
-minecraft = "4d6ee28d9bd345a5a5c4c39b87827b9c"
-[[extra.contributors]]
 name = "mounderfod"
 minecraft = "04b087925f0e4ba5bf6ddba7bfe240d9"
 [[extra.contributors]]

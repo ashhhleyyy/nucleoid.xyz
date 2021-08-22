@@ -12,9 +12,6 @@ minecraft = "c3ed4d52fb4f4964ba1b9cda2453741e"
 name = "haykam"
 minecraft = "c705fc7d09624d1e905bb83d81d9b4ec"
 [[extra.contributors]]
-name = "Hmmarch"
-minecraft = "4d6ee28d9bd345a5a5c4c39b87827b9c"
-[[extra.contributors]]
 name = "Shock_Micro"
 minecraft = "13c89fae816e438c94ab3cd4bc4f55b4"
 [[extra.contributors]]
