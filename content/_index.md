@@ -111,7 +111,7 @@ minecraft = "8d6dddfcb3eb4d4a9e98754aaed544e6"
 name = "antek324980"
 minecraft = "f1bade07a7764245ae92b749078c99e3"
 [[extra.contributors]]
-name = "Expora9"
+name = "Exo"
 minecraft = "8b07d8ad352e4b86b1bc2d2dad269c4b"
 [[extra.contributors]]
 name = "robotkoer"
