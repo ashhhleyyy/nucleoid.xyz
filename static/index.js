@@ -41,7 +41,9 @@ statusRequest.onreadystatechange = function() {
     if (statusRequest.readyState == 4) {
         if (statusRequest.status == 200) {
             const json = JSON.parse(statusRequest.responseText);
-            const gameVersion = json.game_version;
+            // TODO: change when moved to 1.17
+            // const gameVersion = json.game_version;
+            const gameVersion = "1.17.1";
             const playerCount = json.players.length;
     
             var content = "You can join us";
@@ -52,10 +54,10 @@ statusRequest.onreadystatechange = function() {
             }
 
             if (gameVersion != "") {
-                content += " with Minecraft " + gameVersion;
+                content += " with <b>Minecraft " + gameVersion + "</b> ";
             }
             
-            content += " at: <code>nucleoid.xyz</code>"
+            content += "at: <code>nucleoid.xyz</code>"
 
             serverStatus.innerHTML = content;
         }

@@ -101,13 +101,13 @@ code {
     user-select: all;
 }
 
-#contact {
+#get_involved {
     padding-top: 20px;
 }
 
 /* Buttons */
 
-#contact a {
+#get_involved a {
     position: relative;
     display: inline-block;
     padding: 12px 36px;
@@ -120,15 +120,19 @@ code {
     background: linear-gradient(80deg, #E3E3E3, #9E9E9E);
 }
 
-#contact a:nth-of-type(2) {
+#get_involved a:nth-of-type(1) {
     background: linear-gradient(80deg, #2360BD, #646ED5);
 }
 
-#contact a {
+#get_involved a:nth-of-type(3) {
+    background: linear-gradient(80deg, #23bd49, #64d58a);
+}
+
+#get_involved a {
     transition: 0.4s;
 }
 
-#contact a:hover {
+#get_involved a:hover {
     transform: scale(1.1);
     z-index: 5;
 }

@@ -2,7 +2,7 @@
 title = "Bow Battle"
 
 [extra]
-header = "assets/images/fallback.png"
+header = "assets/images/bow_battle.png"
 link = "https://github.com/Gibatron/bow-battle/"
 
 [[extra.contributors]]
