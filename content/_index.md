@@ -36,9 +36,6 @@ minecraft = "13c89fae816e438c94ab3cd4bc4f55b4"
 name = "mounderfod"
 minecraft = "04b087925f0e4ba5bf6ddba7bfe240d9"
 [[extra.contributors]]
-name = "SillySausage09"
-minecraft = "dca7cb177f1349c89ab4a5267f8f53e5"
-[[extra.contributors]]
 name = "Marth_Daul"
 minecraft = "9e3dda3eb9e34702ba48e243d7d8ad0f"
 [[extra.contributors]]
