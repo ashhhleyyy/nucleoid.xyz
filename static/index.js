@@ -43,7 +43,7 @@ statusRequest.onreadystatechange = function() {
             const json = JSON.parse(statusRequest.responseText);
             // TODO: change when moved to 1.17
             // const gameVersion = json.game_version;
-            const gameVersion = "1.17.1";
+            const gameVersion = "1.18.1";
             const playerCount = json.players.length;
     
             var content = "You can join us";
