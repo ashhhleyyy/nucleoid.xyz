@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <!--
+MIT License
+
+Copyright (c) 2021 Tom_The_Geek
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+    -->
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nucleoid Library Versions</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #252422;
+                color: white;
+            }
+
+            a {
+                color: #ddd;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            img {
+                padding-right: 4px;
+            }
+
+            .central-box {
+                background-color: #403D39;
+                margin: 5vh auto;
+                min-width: 512px;
+                width: 50%;
+                border: 2px solid #ddd;
+                border-radius: 8px;
+            }
+
+            .box-content {
+                padding: 16px;
+            }
+            
+            .project-type-select {
+                display: flex;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: 0;
+                margin-right: 0;
+                border-bottom: 2px solid #ddd;
+            }
+
+            .button-select-type {
+                flex: 1;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                background-color: inherit;
+                border: none;
+                color: inherit;
+                text-align: center;
+                cursor: pointer;
+                transition: background-color 250ms ease;
+                text-decoration: none;
+                font-size: calc(1rem + 4px);
+            }
+
+            .button-select-type:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            .button-select-type.selected {
+                background-color: rgba(255, 255, 255, 0.25);
+                border-bottom: 4px solid #579B67;
+            }
+            
+            .inspiration {
+                position: fixed;
+                bottom: 8px;
+                left: 8px;
+                max-width: 50vw;
+            }
+
+            .improve {
+                position: fixed;
+                bottom: 8px;
+                right: 8px;
+                max-width: 50vw;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <noscript>Warning: your browser has JavaScript disabled and so this page may not display correctly!</noscript>
+        <h1>Nucleoid Library Versions</h1>
+
+        <div class="central-box">
+            <div class="box-content" id='libs-box'>
+                <script>
+                    const holder = document.getElementById('libs-box');
+                    function createLibraryBadge(lib) {
+                        const link = document.createElement('a');
+                        link.href = lib.github_repo;
+                        const img = document.createElement('img');
+                        img.src = `https://img.shields.io/maven-metadata/v?color=%23579B67&label=${lib.display_name}&metadataUrl=${encodeURIComponent(lib.metadata_url)}`;
+                        img.alt = `${lib} version badge`;
+                        link.appendChild(img);
+                        holder.appendChild(link);
+                    }
+                    const createMetaUrl = (group, name) => {
+                        return `https://maven.nucleoid.xyz/${group.replaceAll('.', '/')}/${name}/maven-metadata.xml`;
+                    }
+
+                    [
+                        {
+                            display_name: 'Fantasy',
+                            github_repo: 'https://github.com/NucleoidMC/fantasy',
+                            metadata_url: createMetaUrl('xyz.nucleoid', 'fantasy'),
+                        },
+                        {
+                            display_name: 'Leukocyte',
+                            github_repo: 'https://github.com/NucleoidMC/leukocyte',
+                            metadata_url: createMetaUrl('xyz.nucleoid', 'leukocyte'),
+                        },
+                        {
+                            display_name: 'packet-tweaker',
+                            github_repo: 'https://github.com/NucleoidMC/packet-tweaker',
+                            metadata_url: createMetaUrl('xyz.nucleoid', 'packet-tweaker'),
+                        },
+                        {
+                            display_name: 'Plasmid',
+                            github_repo: 'https://github.com/NucleoidMC/plasmid',
+                            metadata_url: createMetaUrl('xyz.nucleoid', 'plasmid'),
+                        },
+                        {
+                            display_name: 'DisguiseLib (fabric)',
+                            github_repo: 'https://github.com/NucleoidMC/DisguiseLib',
+                            metadata_url: createMetaUrl('xyz.nucleoid', 'disguiselib-fabric'),
+                        },
+                        {
+                            display_name: 'Substrate',
+                            github_repo: 'https://github.com/NucleoidMC/substrate',
+                            metadata_url: createMetaUrl('xyz.nucleoid', 'substrate'),
+                        },
+                        {
+                            display_name: 'Stimuli',
+                            github_repo: 'https://github.com/NucleoidMC/stimuli',
+                            metadata_url: createMetaUrl('xyz.nucleoid', 'stimuli'),
+                        },
+                        {
+                            display_name: 'more-codecs',
+                            github_repo: 'https://github.com/NucleoidMC/more-codecs',
+                            metadata_url: createMetaUrl('xyz.nucleoid', 'more-codecs'),
+                        },
+                        {
+                            display_name: 'server-translations-api',
+                            github_repo: 'https://github.com/arthurbambou/Server-Translations/',
+                            metadata_url: createMetaUrl('fr.catcore', 'server-translations-api'),
+                        },
+                        {
+                            display_name: 'hologram-api',
+                            github_repo: 'https://github.com/Patbox/HologramAPI/',
+                            metadata_url: createMetaUrl('eu.pb4', 'hologram-api'),
+                        },
+                        {
+                            display_name: 'placeholder-api',
+                            github_repo: 'https://github.com/Patbox/FabricPlaceholderAPI/',
+                            metadata_url: createMetaUrl('eu.pb4', 'placeholder-api'),
+                        },
+                        {
+                            display_name: 'sidebar-api',
+                            github_repo: 'https://github.com/Patbox/SidebarAPI/',
+                            metadata_url: createMetaUrl('eu.pb4', 'sidebar-api'),
+                        },
+                        {
+                            display_name: 'polymer',
+                            github_repo: 'https://github.com/Patbox/polymer/',
+                            metadata_url: createMetaUrl('eu.pb4', 'polymer'),
+                        },
+                        {
+                            display_name: 'sgui',
+                            github_repo: 'https://github.com/Patbox/sgui/',
+                            metadata_url: createMetaUrl('eu.pb4', 'sgui'),
+                        }
+                    ].forEach(createLibraryBadge);
+                </script>
+            </div>
+        </div>
+
+        <div class="central-box">
+            <nav class="project-type-select">
+                <a href="#" id="select-with" class="button-select-type selected">With plasmid-starter</a>
+                <a href="#" id="select-without" class="button-select-type">Without plasmid-starter</a>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        function createButton(button, otherButton, element, otherElement) {
+                            button.onclick = () => {
+                                otherButton.classList.remove('selected');
+                                button.classList.add('selected');
+                                element.style.display = 'block';
+                                otherElement.style.display = 'none';
+                            }
+                        }
+                        const withButton = document.getElementById('select-with');
+                        const withoutButton = document.getElementById('select-without');
+                        const withoutElement = document.getElementById('without-starter');
+                        const withElement = document.getElementById('with-starter');
+                        createButton(withButton, withoutButton, withElement, withoutElement);
+                        createButton(withoutButton, withButton, withoutElement, withElement);
+                    });
+                </script>
+            </nav>
+
+            <div class="box-content">
+                <div id="without-starter" name="code" style="display: none;">
+                    <h3>build.gradle</h1>
+                    <pre>
+                        <code class="gradle">dependencies {
+    // [...] MC, mappings, Fabric, etc.
+
+    // Plasmid (minigames)
+    modImplementation "xyz.nucleoid:plasmid:{plasmid_version}"
+    // Leukocyte (region protection)
+    modImplementation "xyz.nucleoid:leukocyte:{leukocyte_version}"
+    // Substrate (worldgen stuff)
+    modImplementation "xyz.nucleoid:substrate:{substrate_version}"
+}</code>
+                    </pre>
+                </div>
+
+            
+                <div id="with-starter" name="code">
+                    <h3>gradle.properties</h3>
+                    <pre>
+                        <code class="properties">plasmid_version={plasmid_version}</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="inspiration">
+            This page is very much inspired by <a target="_blank" href="https://modmuss50.me/fabric.html">https://modmuss50.me/fabric.html</a> for looking up Fabric dependency versions
+        </div>
+
+        <div class="improve">
+            Think you can improve this page? Fork it on <a href="https://github.com/NucleoidMC/nucleoid.xyz">GitHub</a>!
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+        <script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/gradle.min.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelectorAll('pre code').forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+
+                //Taken from https://stackoverflow.com/questions/1144783/how-to-replace-all-occurrences-of-a-string-in-javascript
+                String.prototype.replaceAll = function (search, replacement) {
+                    var target = this;
+                    return target.replace(new RegExp(search, 'g'), replacement);
+                };
+
+                function replaceInCodeblocks(key, replacement) {
+                    document.querySelectorAll('pre code').forEach((codeblock) => {
+                        codeblock.innerHTML = codeblock.innerHTML.replaceAll(`{${key}}`, replacement);
+                    });
+                }
+
+                const parser = new DOMParser();
+                function getLibraryVersion(maven, group, artifact, callback) {
+                    const metadata_url = maven + group.replace('.', '/') + '/' + artifact + '/maven-metadata.xml';
+                    fetch(metadata_url)
+                        .then(res => res.text())
+                        .then(text => parser.parseFromString(text, 'text/xml'))
+                        .then(doc => {
+                            const latestVersion = doc.getElementsByTagName('latest')[0].innerHTML;
+                            callback(latestVersion);
+                        });
+                }
+
+                const maven = "https://maven.nucleoid.xyz/";
+                const group = "xyz.nucleoid";
+                getLibraryVersion(maven, group, "plasmid", version => replaceInCodeblocks("plasmid_version", version));
+                getLibraryVersion(maven, group, "leukocyte", version => replaceInCodeblocks("leukocyte_version", version));
+                getLibraryVersion(maven, group, "substrate", version => replaceInCodeblocks("substrate_version", version));
+            }, false);
+        </script>
+    </body>
+</html>

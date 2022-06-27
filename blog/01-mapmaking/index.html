@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nucleoid</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https:&#x2F;&#x2F;nucleoid.xyz/favicon.ico" />
+    <meta property="og:site_name" content="Nucleoid">
+    <meta property="og:type" content="website">
+    
+<meta property="og:title" content="Nucleoid: How We Make Our Maps">
+<meta property="og:description" content="Any fun, playable game needs an interesting map to be played on! This makes map building one of the …">
+<meta property="og:image" content="https://nucleoid.xyz/assets/images/blog/mapmaking.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="How We Make Our Maps">
+
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Amelia 'SynthRose'" />
+    <link rel="stylesheet" type="text/css" href=https://nucleoid.xyz/base.css>
+    
+<link rel="stylesheet" type="text/css" href=https://nucleoid.xyz/blog.css>
+<meta property="og:url" content="https:&#x2F;&#x2F;nucleoid.xyz&#x2F;blog&#x2F;01-mapmaking&#x2F;">
+
+</head>
+
+<body>
+    
+<div id="root">
+  <img src="https://nucleoid.xyz/assets/images/background.png" id="background">
+  <div id="header">
+    <a href="https:&#x2F;&#x2F;nucleoid.xyz">
+      <img src="https://nucleoid.xyz/assets/images/nucleoid_logo.png" alt="Nucleoid's logo" id="logo" class="sharp">
+    </a>
+  </div>
+  <div id="content">
+    
+<h1 class="title">How We Make Our Maps</h1>
+<h3 class="date">2021-01-07</h3>
+
+<img src="https://nucleoid.xyz/assets/images/blog/mapmaking.png" class="header_image">
+
+<hr>
+<div id="text">
+  <p>Any fun, playable game needs an interesting map to be played on! This makes map building one of the most important parts of the minigame creation process.
+In this blog, we will showcase the process that contributors may take when building a map.</p>
+</br>
+<p>When a builder decides that they want to make a map, the first step is to head over to a server with Plasmid installed. Plasmid is our custom game library which allows us to create minigames with ease- but most importantly here, it introduces a helpful map-making system, of which we will be making full use.</p>
+<p>If you are interested in exploring much deeper detail into the workings of Plasmid's map system, see the <a href="https://github.com/NucleoidMC/plasmid/wiki/Creating-a-Map">Creating a Map</a> wiki page.</p>
+</br>
+<p>For ease of collaboration between contributors, we have an official whitelisted build server with Plasmid already installed. One of our builders is creating a map for <a href="https://github.com/NucleoidMC/koth">King of the Hill</a>. So, our builder joins the server and creates an empty map with a handy command:</p>
+<p><img src="/assets/images/blog/Kg34kl.jpg" alt="Opening a map" /></p>
+<p>All interaction with the map system in Plasmid works through a <code>/map</code> command, which allows the swift creation of maps, editing, and exporting for use in production. </p>
+</br>
+<p>One important concept within the map system is <em>regions</em>. A region is a helpful way of communicating information about the map to the game logic itself. This may be to communicate where players should spawn, or where an item generator should be placed. Regions, essentially, are just <em>a named area of the world</em>. When the game runs, it is able to request these regions from the map, and, from there, can decide how the game should run.</p>
+<p>For example, in KotH, we require two vital regions:</p>
+<ul>
+<li><code>spawn</code> - Where the players will spawn after being knocked off or at the start of the game.</li>
+<li><code>throne</code> - Where the &quot;top of the hill&quot; is considered.</li>
+</ul>
+</br>
+<p>For showcase purposes, our builder has set the regions to visible:
+<img src="/assets/images/blog/Kg3ZBe.png" alt="Regions" /></p>
+<p>&quot;But what do the colors mean?&quot; you might say;</p>
+<ul>
+<li><strong>Red</strong> - The bounding box, anything built outside this red cube will not be saved.</li>
+<li><strong>Blue</strong> - Regions, the lower region is the spawn and the topmost region is the throne.</li>
+</ul>
+</br>
+<p>By the looks of it, our builder has finished their map, and it is now ready to be implemented! 
+All they need to do is run <code>/map export</code>, which will save the map to a file that can be read by Plasmid.</p>
+<p>In the case of our build server, we <a href="https://build.nucleoid.xyz/plasmid/export">expose public file system access</a> to the map export folder to make accessing these files much easier!</p>
+
+</div>
+
+  </div>
+</div>
+
+</body>
+
+</html>

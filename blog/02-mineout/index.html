@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nucleoid</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https:&#x2F;&#x2F;nucleoid.xyz/favicon.ico" />
+    <meta property="og:site_name" content="Nucleoid">
+    <meta property="og:type" content="website">
+    
+<meta property="og:title" content="Nucleoid: Making Of: Mineout">
+<meta property="og:description" content="As described by the homepage, 
+
+Mineout is a free-for-all party game in which players must reach the…">
+<meta property="og:image" content="https://nucleoid.xyz/assets/images/blog/making_of_mineout.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Making Of: Mineout">
+
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Amelia 'SynthRose'" />
+    <link rel="stylesheet" type="text/css" href=https://nucleoid.xyz/base.css>
+    
+<link rel="stylesheet" type="text/css" href=https://nucleoid.xyz/blog.css>
+<meta property="og:url" content="https:&#x2F;&#x2F;nucleoid.xyz&#x2F;blog&#x2F;02-mineout&#x2F;">
+
+</head>
+
+<body>
+    
+<div id="root">
+  <img src="https://nucleoid.xyz/assets/images/background.png" id="background">
+  <div id="header">
+    <a href="https:&#x2F;&#x2F;nucleoid.xyz">
+      <img src="https://nucleoid.xyz/assets/images/nucleoid_logo.png" alt="Nucleoid's logo" id="logo" class="sharp">
+    </a>
+  </div>
+  <div id="content">
+    
+<h1 class="title">Making Of: Mineout</h1>
+<h3 class="date">2021-01-07</h3>
+
+<img src="https://nucleoid.xyz/assets/images/blog/making_of_mineout.png" class="header_image">
+
+<hr>
+<div id="text">
+  <p>As described by the homepage, </p>
+<blockquote>
+<p>Mineout is a free-for-all party game in which players must reach the end of a set course. The default map has four sections:</p>
+<ul>
+<li>Bridging: players must bridge to the other side of a large gap while it decays behind them</li>
+<li>Elytra: players must fly through scattered blocks to get to the other side</li>
+<li>Riptide: players must use a Riptide trident to fly through hoops</li>
+<li>Parkour: players must cross a lava pit by parkour</li>
+</ul>
+</blockquote>
+<p>The game was devised by mounderfod (I'm writing this thing, hi there!) and both Marth_Daul and SillySausage09 helped with the building. Gegy then programmed the whole minigame in Plasmid.</p>
+<h1 id="original-design">Original Design</h1>
+<p>The minigame is based on <em>To Get To The Other Side (TGTTOS)</em>, which is one of the games present in the popular <a href="https://noxcrew.com/mcc">Minecraft Championship</a>. TGTTOS involves a number of rounds in which the players work to, well, <em>get to the other side</em>, using various means of transport to reach the end goal each time. There are parkour rounds, bridging rounds, and even a trident Riptiding round. No other server that I knew of had a minigame anything like this, and at the time I was a builder for Nucleoid, and so I made the decision to open a map and try to build a similar game. </p>
+<h1 id="mineout-v1">Mineout v1</h1>
+<p>The original Mineout which I had devised had four sections in order: parkour, elytra flight, riptiding and bridging. It took me a few days to build the map but with the help of SillySausage and Marth, I was able to get it done. Most of the parkour and elytra section was randomly generated using WorldEdit, and then modified to make it playable. There were a few issues that we had to solve, particularly with the elytra and trident sections. How could we stop the player from going in the wrong place? Eventually, we decided to use water to catch the players in the elytra section, and then they could swim down a small opening into the trident section (1). If they were flying lower, then they could pass straight through (2). </p>
+<p><img src="/assets/images/blog/mineout_diagram.png" alt="Mineout Diagram" /></p>
+<h1 id="balancing-and-fixes">Balancing and Fixes</h1>
+<p>After this, we did a variety of tests and received a range of feedback. One of the main concerns was that the parkour section split up the crowd too much at the start, and whoever did well there would probably win regardless of their performance later. Another concern was that players could build faster by building alongside the barriers on the side of the map during the bridging section. Finally, it was possible to use others bridges during the bridging section to not have to bridge across.</p>
+<p>To combat the first issue, we moved the bridging to the start and the parkour to the end, and we made it so that you could PvP during the bridging section and added block decay (blocks slowly disappear) so as to fix the third problem. As for the side building, we made changes to the NBT so that you could not place the wool on barrier blocks, and shrunk the building region so that you couldn't build on them anyway. We also made sure to patch any potential out-of-bounds bugs.</p>
+<p>This left Mineout in its final, current state. The game is now quick-paced but challenging and a number of players have expressed that this makes the minigame fun to play. We continue to accept and work on feedback!</p>
+<p>If you'd like to try the game out for yourself, connect to <code>play.nucleoid.xyz</code> and find the Mineout NPC. You don't even need to play with others, either - you can just as easily do a solo time trial!</p>
+
+</div>
+
+  </div>
+</div>
+
+</body>
+
+</html>
