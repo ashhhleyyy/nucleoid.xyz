@@ -1,1 +1,3 @@
 public/
+# nix flake output
+/result
